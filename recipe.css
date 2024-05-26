@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+
+    background-color: antiquewhite;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;    
+}
+   
+   
+ .navbar{
+        display: flex;
+        list-style-type: none;
+        padding: 0px;
+        justify-content: space-around;
+        border-top: 2px solid black;
+        border-bottom: 2px solid black;
+        margin: 50px 20px 50px 20px;
+    }
+
+#logo{
+    height: 5rem;
+    width: 8rem;
+    margin-left: 20px;
+ }
+h1{
+
+    text-align: center;
+    margin: 0px 20px 5px 20px;
+    color: rgb(134, 18, 18);
+    text-shadow: 2px 2px #e46b6b;
+    background-color: antiquewhite;
+    
+}
+
+.list{
+    font-size: 30px;
+    position: relative;
+    justify-content: left;
+    color: black;
+    font-weight: 900;
+    margin-top: 50px;
+    margin-left: 30px;
+    text-align: left;
+    color: rgb(87, 70, 70);
+    flex-wrap: wrap;
+
+}
+
+
+.chicken{
+    width: 100%;
+    text-align: right;
+    position: absolute;
+    padding-right: 50px;
+   
+    
+
+
+}
+
+div p{
+    top: 80%;
+    position: relative;
+    margin: 100px 50px 50px 50px;
+    border: 2px solid black;
+    text-align: center;
+    font-style: italic;
+    font-size: 20px;
+    background-color: beige;
+    padding: 5px, 5px, 5px, 5px ;
+    padding: 10px;
+
+
+
+
+}
+
+.footer{
+    position:relative;
+    width: 100%;
+    margin-top: 100px;
+    height: 200px;
+    background-color: black;
+    text-align: center;
+    display: flex;
+    top: 100%;
+}
+.footer li{
+flex: 1;
+justify-content: space-around;
+align-items: center;
+border-right: 1px solid white;
+border-left: 1px solid white;
+height: fit-content;
+
+}
+
+.footer p{
+flex: 1;
+bottom: 80%;
+
+}
+
+.footertext, .footerlogos, .TM{
+    color: white;
+text-decoration: none;
+ }

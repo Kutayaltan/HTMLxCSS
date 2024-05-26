@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*Header section */
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;    
+}
+
+#logo{
+   height: 5rem;
+   width: 8rem;
+   margin-left: 10px;
+}
+
+.links{
+    display: flex;
+    column-gap: 30px; 
+    list-style-type: none;
+    
+    
+    a{
+        text-decoration: none;
+        color: black
+    }
+}
+
+.navbar{
+    display: flex;
+    list-style-type: none;
+    padding: 10px;
+    justify-content: space-around;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    margin: 0px 20px 0px 20px;
+}
+/*Header section ends */
+
+/* Main Content starts*/
+
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr) ;
+    margin: 30px 20px 30px 20px;
+    gap: 20px;
+}
+
+
+
+.grid img{
+    width: 100%;
+    height: 100%;
+    max-height: 250px;
+}
+
+.card{
+    position: relative;
+}
+
+.card p{
+        position: absolute;
+        top: 90%;
+        left: 50%;
+        padding: 15px;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        text-align: center;
+        background-color: rgba(0, 0, 0, 0.199) ;
+        color: white;
+}
+
+/* Main Content ends */
+
+/*Footer starts*/
+
+.footer{
+    display: inline-block;
+
+    flex: 1;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 10%;
+    background-color: black;
+    
+    justify-content: space-around;
+}
+/* .footer  is not as shown, i have no idea how to split the 3 areas equally in 3 lines, took me hours, still no result */
+
+
+.footer text{
+    display: inline-block;
+    justify-content: space-around;
+ flex: 1;
+    padding: 1%;
+    padding-left: 10%;  
+    border-right: 1px solid white;
+    border-left: 1px solid white;
+}
+
+.footertext, .footerlogos, .TM{
+    color: white;
+text-decoration: none; }
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    justify-content: space-between;
+  }
+
+  .fa-facebook {
+    color: white;
+  }
+
+
+@media (width < 400px) {
+    .grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media (width > 400px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (width > 768px) {
+    .grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
